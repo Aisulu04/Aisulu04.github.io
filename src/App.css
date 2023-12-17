@@ -1,0 +1,21 @@
+html{
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background-color: rgb(16, 16, 68);
+  color: rgb(44, 44, 44);
+}
+
+section{
+  height: 100vh;
+  scroll-snap-align: center;
+}

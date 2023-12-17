@@ -1,0 +1,33 @@
+@import "../../App.css";
+
+.navbar {
+  height: 100px;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  .wrapper {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    
+
+    @include mobile {
+      justify-content: flex-end;
+      padding: 20px;
+    }
+
+    .social {
+      display: flex;
+      gap: 5px;
+      margin-left: 1300px;
+
+      img {
+        
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}

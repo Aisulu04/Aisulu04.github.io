@@ -1,0 +1,108 @@
+@import "../../App.css";
+
+.me {
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  position: relative;
+
+  .wrapper {
+    max-width: 1300px;
+    height: 100%;
+    margin: auto;
+
+    .btn-xs {
+      padding: 10px 20px;
+      font-size: 15px;
+      border-radius: 10px;
+      font-weight:bold;
+      width: 180px;
+      border-color: transparent;
+      margin-bottom: 100px;
+      background-color: yellow;
+      color: black;
+  }
+
+    .textContainer {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+
+      @include mobile {
+        height: 50%;
+        width: 100%;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+      }
+
+      h2 {
+        font-size: 30px;
+        color: rgb(199, 219, 27);
+        letter-spacing: 5px;
+      }
+
+      h1 {
+        font-size: 50px;
+        color: rgb(230, 230, 230);
+
+        @include mobile {
+          font-size: 36px;
+        }
+      }
+
+      h3 {
+        font-size: 20px;
+        color: rgb(230, 230, 230);
+
+        @include mobile {
+          font-size: 32px;
+        }
+      }
+
+      hr{
+        color: aliceblue;
+      }
+
+      
+
+      
+    }
+  }
+
+  .imageContainer {
+    height: 100%;
+    position: absolute;
+    bottom: 100px;
+    right: 200px;
+
+    @include mobile {
+      height: 50%;
+      width: 100%;
+      top: unset;
+      bottom: 0;
+    }
+
+    img{
+      
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+
+  .slidingTextContainer {
+    position: absolute;
+    font-size: 50vh;
+    bottom: -120px;
+    white-space: nowrap;
+    color: #fcfcfc09;
+    width: 50%;
+    font-weight: bold;
+  }
+}
